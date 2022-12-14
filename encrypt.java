@@ -17,6 +17,7 @@ public class encrypt {
 
     static String swap(String str, int i, int j)
     {
+        //swap the position of 
         char ch[] = str.toCharArray();
         char temp = ch[i];
         ch[i] = ch[j];
