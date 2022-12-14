@@ -12,7 +12,7 @@ public class encrypt {
         for(String i: str.split(" ")){
             //call the string function swap()
             String temp = swap(i, 1, i.length() - 1);
-            //store the result with converting the first letter of the word to ASCII and adding the remaining words of the string
+            //store the result with converting the first letter of the word to ASCII and adding the remaining word of the string
             result += Integer.toString((int)i.charAt(0)) + temp.substring(1, temp.length()) + " ";
         }
 
