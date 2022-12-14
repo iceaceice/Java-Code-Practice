@@ -7,8 +7,12 @@ public class encrypt {
     static String encryptText(String str){
 
         String result = "";
+
+        //Split the string by space delimiter
         for(String i: str.split(" ")){
+            //call the string function swap()
             String temp = swap(i, 1, i.length() - 1);
+            //store the result with converting the first letter of the word to ASCII and adding the remaining words of the string
             result += Integer.toString((int)i.charAt(0)) + temp.substring(1, temp.length()) + " ";
         }
 
@@ -17,7 +21,7 @@ public class encrypt {
 
     static String swap(String str, int i, int j)
     {
-        //swap the position of 
+        //swap the position of second letter and last letter of the word
         char ch[] = str.toCharArray();
         char temp = ch[i];
         ch[i] = ch[j];
