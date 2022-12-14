@@ -31,18 +31,19 @@ public class encrypt {
 }
 
 //Problem
-// Implement a pseudo-encryption algorithm which given a string S and an integer N concatenates all the 
-// odd-indexed characters of S with all the even-indexed characters of S, this process should be repeated N times.
+
+// Description:
+// Encrypt this!
+
+// You want to create secret messages which can be deciphered by the Decipher this! kata. Here are the conditions:
+
+// Your message is a string containing space separated words.
+// You need to encrypt each word in the message using the following rules:
+// The first letter must be converted to its ASCII code.
+// The second letter must be switched with the last letter
+// Keepin' it simple: There are no special characters in the input.
 
 // Examples:
-// encrypt("012345", 1)  =>  "135024"
-// encrypt("012345", 2)  =>  "135024"  ->  "304152"
-// encrypt("012345", 3)  =>  "135024"  ->  "304152"  ->  "012345"
-
-// encrypt("01234", 1)  =>  "13024"
-// encrypt("01234", 2)  =>  "13024"  ->  "32104"
-// encrypt("01234", 3)  =>  "13024"  ->  "32104"  ->  "20314"
-
-// Together with the encryption function, you should also implement a decryption function which reverses the process.
-
-// If the string S is an empty value or the integer N is not positive, return the first argument without changes.
+// Kata.encryptThis("Hello") => "72olle"
+// Kata.encryptThis("good") => "103doo"
+// Kata.encryptThis("hello world") => "104olle 119drlo"
